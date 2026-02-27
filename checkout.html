@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - AgriHub</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Link to the SHARED CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body class="auth-body">
+
+    <!-- Leaf decoration (From existing styles) -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDJDNjUgNjUgMTUgNzUgMiAyMkM1MCA1MCA1IDE1IDIyIDJaIiBmaWxsPSIjM0U1QjQ2Ii8+PC9zdmc+" class="leaf-decoration leaf-1" alt="leaf">
+
+    <div class="checkout-wrapper">
+        <!-- LEFT: Order Summary -->
+        <div class="order-summary">
+            <h2 style="margin-bottom: 20px; font-family: 'Playfair Display', serif; color: var(--primary-green);">Your Order</h2>
+            
+            <div class="summary-item">
+                <div style="display: flex; gap: 10px;">
+                    <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=50" style="border-radius: 5px; width: 60px; height: 60px; object-fit: cover;">
+                    <div>
+                        <strong>Fresh Red Tomatoes</strong><br>
+                        <small style="color: #666;">Quantity: 1 Crate</small>
+                    </div>
+                </div>
+                <span>KSh 1,100</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Service Fee (10%)</span>
+                <span>Included</span>
+            </div>
+
+            <div class="total-row">
+                <span>Total to Pay</span>
+                <span>KSh 1,100</span>
+            </div>
+            
+            <div style="margin-top: 30px; color: #777; font-size: 0.9rem;">
+                <p>📍 Delivery Location: <strong>Nairobi, CBD</strong> <a href="#" style="color: var(--accent-green);">(Edit)</a></p>
+            </div>
+        </div>
+
+        <!-- RIGHT: Payment -->
+        <div class="payment-details">
+            <h2 style="margin-bottom: 20px; font-family: 'Playfair Display', serif; color: var(--primary-green);">Payment Method</h2>
+            
+            <!-- Mobile Money Integration Mockup -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/2560px-M-PESA_LOGO-01.svg.png" alt="M-Pesa" class="mpesa-logo">
+            
+            <form>
+                <div class="form-group">
+                    <label>M-Pesa Phone Number</label>
+                    <input type="text" placeholder="07XX XXX XXX" style="font-size: 1.1rem; letter-spacing: 1px;">
+                </div>
+                
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px; line-height: 1.5;">
+                    1. Enter your M-Pesa phone number.<br>
+                    2. Click "Pay Now".<br>
+                    3. Check your phone for the M-Pesa PIN prompt (STK Push).
+                </p>
+
+                <button type="button" class="btn-submit" onclick="alert('Payment Simulation: Success! Order placed.')">Pay KSh 1,100 Now</button>
+                <a href="product.html" style="display:block; text-align:center; margin-top:15px; text-decoration:none; color:#888;">Cancel Payment</a>
+        </div>
+    </div>
+
+    <!-- Leaf decoration -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDJDNjUgNjUgMTUgNzUgMiAyMkM1MCA1MCA1IDE1IDIyIDJaIiBmaWxsPSIjM0U1QjQ2Ii8+PC9zdmc+" class="leaf-decoration leaf-2" alt="leaf">
+    <script src="script.js"></script>
+</body>
+</html>
